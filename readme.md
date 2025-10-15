@@ -78,11 +78,11 @@ Through this project, I covered the complete pipeline — **data extraction → 
 
 ## 🖼️ Visualizations
 
-| Visualization                                                        | Description                                                   |
-| -------------------------------------------------------------------- | ------------------------------------------------------------- |
-| ![Top 10 Tags](images/top10MostCommonTags.png)                       | Horizontal bar plot showing the Top 10 most common tags       |
-| ![Quote Length Distribution](images/QuoteLengthDistribution.png.png) | Histogram showing distribution of quote lengths               |
-| ![Word Cloud](images/wordcloud.png)                                  | Word cloud highlighting the most frequent words across quotes |
+| Visualization                                                    | Description                                                   |
+| ---------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![Top 10 Tags](images/top10MostCommonTags.png)                   | Horizontal bar plot showing the Top 10 most common tags       |
+| ![Quote Length Distribution](images/quoteLengthDistribution.png) | Histogram showing distribution of quote lengths               |
+| ![Word Cloud](images/wordcloud.png)                              | Word cloud highlighting the most frequent words across quotes |
 
 ---
 
@@ -97,7 +97,7 @@ Through this project, I covered the complete pipeline — **data extraction → 
 │   └── quotes.csv                  # CSV file with all scraped quotes, authors, and tags
 │
 ├── 📂 images/                      # Directory containing all generated visualizations
-│   ├── QuoteLengthDistribution.png # Histogram of quote length patterns
+│   ├── quoteLengthDistribution.png # Histogram of quote length patterns
 │   ├── top10MostCommonTags.png     # Bar chart of most common tags
 │   └── wordcloud.png               # Word cloud of frequent terms
 │
