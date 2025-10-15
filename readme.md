@@ -4,8 +4,8 @@
 
 Before starting the analysis, this project was driven by a few key questions:
 
-1. **Who are the most frequently quoted authors?**  
-   → _Explored using a horizontal bar plot showing the Top 10 Authors._
+1. **What are the most common tags associated with quotes?**  
+   → _Explored using a horizontal bar plot showing the Top 10 Most Common Tags._
 
 2. **What is the typical length of quotes, and how does it vary across the dataset?**  
    → _Visualized using a Seaborn histogram that shows the distribution of quote lengths._
@@ -59,8 +59,8 @@ Through this project, I covered the complete pipeline — **data extraction → 
 
 ### 3. 🔍 Exploratory Data Analysis (EDA)
 
-- **Top 10 Most Quoted Authors:**  
-  Created a horizontal bar plot to show the most frequently quoted authors.
+- **Top 10 Most Common Tags:**  
+  Created a horizontal bar plot to show the most frequently used tags across all quotes.
 - **Quote Length Distribution:**  
   Used Seaborn’s `histplot` to visualize how quote lengths vary.
 - **Word Cloud:**  
@@ -70,7 +70,7 @@ Through this project, I covered the complete pipeline — **data extraction → 
 
 ## 📈 Key Insights
 
-- **Author Popularity:** _Albert Einstein_ and _J.K. Rowling_ emerge as the most frequently quoted authors, indicating their profound impact on popular wisdom and literature.
+- **Tag Popularity:** _Love_, _inspirational_, and _life_ emerge as the most frequently used tags, indicating the dominant themes that resonate with readers seeking wisdom and motivation.
 - **Quote Length Patterns:** Most quotes are **moderately sized** (typically 50-150 characters), suggesting an optimal balance between brevity and meaningful depth that resonates with readers.
 - **Thematic Analysis:** Frequent words include _life, truth, love,_ and _wisdom_, reflecting universal motivational themes that transcend cultural and temporal boundaries.
 
@@ -78,11 +78,11 @@ Through this project, I covered the complete pipeline — **data extraction → 
 
 ## 🖼️ Visualizations
 
-| Visualization                                                      | Description                                                   |
-| ------------------------------------------------------------------ | ------------------------------------------------------------- |
-| ![Top 10 Authors](images/top_10_authors.png)                       | Horizontal bar plot showing the Top 10 most quoted authors    |
-| ![Quote Length Distribution](images/quote_length_distribution.png) | Histogram showing distribution of quote lengths               |
-| ![Word Cloud](images/wordcloud.png)                                | Word cloud highlighting the most frequent words across quotes |
+| Visualization                                                        | Description                                                   |
+| -------------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![Top 10 Tags](images/top10MostCommonTags.png)                       | Horizontal bar plot showing the Top 10 most common tags       |
+| ![Quote Length Distribution](images/QuoteLengthDistribution.png.png) | Histogram showing distribution of quote lengths               |
+| ![Word Cloud](images/wordcloud.png)                                  | Word cloud highlighting the most frequent words across quotes |
 
 ---
 
@@ -93,14 +93,17 @@ Through this project, I covered the complete pipeline — **data extraction → 
 │
 ├── 📄 WebScrappingWithEDA.ipynb    # Main Jupyter notebook containing all scraping and EDA code
 │
+├── 📂 ExtractedData/               # Directory containing scraped data
+│   └── quotes.csv                  # CSV file with all scraped quotes, authors, and tags
+│
 ├── 📂 images/                      # Directory containing all generated visualizations
-│   ├── top_10_authors.png           # Bar chart of most quoted authors
-│   ├── quote_length_distribution.png # Histogram of quote length patterns
-│   └── wordcloud.png                # Word cloud of frequent terms
+│   ├── QuoteLengthDistribution.png # Histogram of quote length patterns
+│   ├── top10MostCommonTags.png     # Bar chart of most common tags
+│   └── wordcloud.png               # Word cloud of frequent terms
 │
 ├── 📄 requirements.txt             # Python dependencies and package versions
 │
-└── 📄 README.md                   # Comprehensive project documentation
+└── 📄 README.md                    # Comprehensive project documentation
 ```
 
 ---
@@ -110,7 +113,7 @@ Through this project, I covered the complete pipeline — **data extraction → 
 ### Prerequisites
 
 - Python 3.7+ installed on your system
-- Jupyter Notebook or JupyterLab
+- Jupyter Notebook or JupyterLab or GoogleColab
 - Internet connection for web scraping
 
 ### Installation Steps
@@ -157,8 +160,6 @@ pip install -r requirements.txt
 ## 🔮 Future Work
 
 - **Sentiment Analysis:** Perform sentiment analysis on quotes to classify them as positive, neutral, or negative using natural language processing techniques.
-
-- **Tag Analysis:** Analyze tag frequency to find which topics are most discussed and identify trending themes across different authors.
 
 - **Interactive Dashboards:** Create interactive dashboards using Plotly or Streamlit for better visualization and user engagement.
 
